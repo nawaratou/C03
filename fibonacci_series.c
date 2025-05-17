@@ -2,26 +2,17 @@
 
 int main() {
     int limit;
-    int a = 0, b = 1, next;
+    int a = 0, b = 1, next = 0;
 
-    // Lire la limite
+    // Lire la valeur limite jusqu'à laquelle afficher la suite de Fibonacci
     scanf("%d", &limit);
 
-    // Afficher la suite si la limite est au moins 0
-    if (limit >= 0) {
+    // Afficher les termes de la suite tant que <= limite
+    while (a <= limit) {
         printf("%d ", a);
-    }
-
-    if (limit >= 1) {
-        printf("%d ", b);
-    }
-
-    next = a + b;
-    while (next <= limit) {
-        printf("%d ", next);
+        next = a + b;
         a = b;
         b = next;
-        next = a + b;
     }
 
     printf("\n");
