@@ -3,16 +3,23 @@
 int main() {
     int a, b, c;
     
-    // Lecture des trois nombres
+    // Read three integers from input
+    printf("Enter three numbers separated by spaces: ");
     scanf("%d %d %d", &a, &b, &c);
     
-    // Comparaison en cascade
-    if (a >= b && a >= c) {
-        printf("Le plus grand nombre est : %d\n", a);
-    } else if (b >= a && b >= c) {
-        printf("Le plus grand nombre est : %d\n", b);
+    // Find the largest number using nested if-else statements
+    if (a >= b) {
+        if (a >= c) {
+            printf("Le plus grand nombre est : %d\n", a);
+        } else {
+            printf("Le plus grand nombre est : %d\n", c);
+        }
     } else {
-        printf("Le plus grand nombre est : %d\n", c);
+        if (b >= c) {
+            printf("Le plus grand nombre est : %d\n", b);
+        } else {
+            printf("Le plus grand nombre est : %d\n", c);
+        }
     }
     
     return 0;
