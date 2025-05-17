@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int limit, a = 0, b = 1, next;
+    int limite;
     
-    scanf("%d", &limit);
+    printf("Entrez la limite pour la suite de Fibonacci : ");
+    scanf("%d", &limite);
     
-    printf("Série de Fibonacci jusqu'à %d :\n", limit);
-    printf("%d ", a); // Affiche le premier terme
+    int a = 0, b = 1, suivant;
     
-    while (b <= limit) {
+    printf("%d ", a);
+    
+    while (b <= limite) {
         printf("%d ", b);
-        next = a + b;
+        suivant = a + b;
         a = b;
-        b = next;
+        b = suivant;
     }
     
     printf("\n");
