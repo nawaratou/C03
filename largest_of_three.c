@@ -4,7 +4,6 @@ int main() {
     int a, b, c;
 
     // Lire trois entiers
-   
     scanf("%d %d %d", &a, &b, &c);
 
     // Vérification du plus grand nombre
