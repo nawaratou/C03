@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    int nombre, original, compteur = 0;
-    
-    printf("Entrez un nombre : ");
+    int nombre, compteur = 0;
+
+    // Lire un nombre
+   
     scanf("%d", &nombre);
-    
-    original = nombre;
-    
-    if (nombre == 0) {
+
+    int n = nombre;
+
+    // Compter les chiffres
+    if (n == 0) {
         compteur = 1;
     } else {
-        while (nombre != 0) {
-            nombre /= 10;
+        while (n != 0) {
+            n = n / 10;
             compteur++;
         }
     }
-    
-    printf("%d contient %d chiffre(s).\n", original, compteur);
-    
+
+    printf("%d contient %d chiffre(s).\n", nombre, compteur);
     return 0;
 }

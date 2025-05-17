@@ -1,18 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int nombre, inverse = 0, reste;
-    
-    printf("Entrez un nombre : ");
+    int nombre, reste, inverse = 0;
+
+    // Lire un entier
+    printf("Entrez un nombre à inverser : ");
     scanf("%d", &nombre);
-    
+
+    int original = nombre;
+
+    // Inverser le nombre
     while (nombre != 0) {
         reste = nombre % 10;
         inverse = inverse * 10 + reste;
-        nombre /= 10;
+        nombre = nombre / 10;
     }
-    
+
     printf("Nombre inversé : %d\n", inverse);
-    
     return 0;
 }

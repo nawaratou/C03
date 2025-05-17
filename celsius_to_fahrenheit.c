@@ -2,13 +2,14 @@
 
 int main() {
     float celsius, fahrenheit;
-    
+
+    // Lire la température en Celsius
     printf("Entrez la température en Celsius : ");
     scanf("%f", &celsius);
-    
-    fahrenheit = (celsius * 9.0 / 5.0) + 32;
-    
+
+    // Conversion en Fahrenheit
+    fahrenheit = (celsius * 9 / 5) + 32;
+
     printf("%.1f°C équivaut à %.1f°F\n", celsius, fahrenheit);
-    
     return 0;
 }
