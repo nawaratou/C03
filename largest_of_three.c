@@ -2,25 +2,19 @@
 
 int main() {
     int a, b, c;
-    
-    // Read three integers from input
-    printf("Enter three numbers separated by spaces: ");
+
+    // Lire trois entiers
+   
     scanf("%d %d %d", &a, &b, &c);
-    
-    // Find the largest number using nested if-else statements
-    if (a >= b) {
-        if (a >= c) {
-            printf("Le plus grand nombre est : %d\n", a);
-        } else {
-            printf("Le plus grand nombre est : %d\n", c);
-        }
+
+    // Vérification du plus grand nombre
+    if (a >= b && a >= c) {
+        printf("Le plus grand nombre est : %d\n", a);
+    } else if (b >= a && b >= c) {
+        printf("Le plus grand nombre est : %d\n", b);
     } else {
-        if (b >= c) {
-            printf("Le plus grand nombre est : %d\n", b);
-        } else {
-            printf("Le plus grand nombre est : %d\n", c);
-        }
+        printf("Le plus grand nombre est : %d\n", c);
     }
-    
+
     return 0;
 }
