@@ -4,7 +4,6 @@ int main() {
     int nombre, reste, inverse = 0;
 
     // Lire un entier
-    printf("Entrez un nombre à inverser : ");
     scanf("%d", &nombre);
 
     int original = nombre;
