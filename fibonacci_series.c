@@ -2,16 +2,17 @@
 
 int main() {
     int limit;
-    int t1 = 0, t2 = 1, nextTerm = 0;
+    int a = 0, b = 1, c;
 
+    // Lire la valeur depuis l'entrée standard (sans afficher de message)
     scanf("%d", &limit);
 
-
-    while (t1 <= limit) {
-        printf("%d ", t1);
-        nextTerm = t1 + t2;
-        t1 = t2;
-        t2 = nextTerm;
+    // Afficher les nombres de Fibonacci jusqu'à la limite
+    while (a <= limit) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
     }
 
     printf("\n");
