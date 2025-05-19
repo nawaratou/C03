@@ -17,7 +17,6 @@ int main() {
     scanf("%d", &limite);
     
     if (limite < 0) {
-        printf("Veuillez entrer un entier positif.\n");
     } else {
         genererFibonacci(limite);
     }
