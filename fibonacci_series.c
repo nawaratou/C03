@@ -1,25 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void genererFibonacci(int limite) {
-    int a = 0, b = 1;
-    while (a <= limite) {
-        printf("%d ", a);
-        int suivant = a + b;
-        a = b;
-        b = suivant;
+// Function to generate fibonnaci series
+int main() {
+    int n, i;
+    unsigned long long first = 0, second = 1, next;
+
+    printf("Enter the number of terms in the Fibonacci series: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: \n");
+
+    for (i = 0; i < n; i++) {
+        if (i <= 1) {
+            next = i;
+        } else {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf("%llu ", next);
     }
     printf("\n");
-}
-
-int main() {
-    int limite;
-    
-    scanf("%d", &limite);
-    
-    if (limite < 0) {
-    } else {
-        genererFibonacci(limite);
-    }
-    
     return 0;
 }
