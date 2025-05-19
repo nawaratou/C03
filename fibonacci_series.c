@@ -14,7 +14,6 @@ void genererFibonacci(int limite) {
 int main() {
     int limite;
     
-    printf("Entrez la limite pour la série de Fibonacci : ");
     scanf("%d", &limite);
     
     if (limite < 0) {
