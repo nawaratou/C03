@@ -10,7 +10,6 @@ int main() {
     if (limit >= 1) {
         printf("%d ", b);
     }
-
     // Générer la suite de Fibonacci jusqu'à la limite
     next = a + b;
     while (next <= limit) {
